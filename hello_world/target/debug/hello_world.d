@@ -1,0 +1,1 @@
+/Users/jarotball/study/RUST_ARCHITECT/hello_world/target/debug/hello_world: /Users/jarotball/study/RUST_ARCHITECT/hello_world/src/compound_datatypes.rs /Users/jarotball/study/RUST_ARCHITECT/hello_world/src/main.rs

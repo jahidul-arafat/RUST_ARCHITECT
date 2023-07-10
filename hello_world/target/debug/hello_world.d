@@ -1,1 +1,1 @@
-/Users/jarotball/study/RUST_ARCHITECT/hello_world/target/debug/hello_world: /Users/jarotball/study/RUST_ARCHITECT/hello_world/src/challenge03.rs /Users/jarotball/study/RUST_ARCHITECT/hello_world/src/main.rs
+/Users/jarotball/study/RUST_ARCHITECT/hello_world/target/debug/hello_world: /Users/jarotball/study/RUST_ARCHITECT/hello_world/src/main.rs /Users/jarotball/study/RUST_ARCHITECT/hello_world/src/ownership_scope.rs

@@ -1,10 +1,13 @@
+// RUST is designed for lower level system's programming unlike Python which is a higher level language.
 //mod challenge01;
 //mod compound_datatypes;
 //mod function_sim;
 // mod challenge02;
 //mod program_flow_control;
-mod challenge03;
+//mod challenge03;
 //mod basics;
+//mod challenge03;
+mod ownership_scope;
 
 fn main() {
     println!("Rust Playbook and Simulations\n----------------------------");
@@ -13,5 +16,6 @@ fn main() {
     //function_sim::function_sim();
     //challenge02::challenge();
     //program_flow_control::simulation();
-    challenge03::challenge();
+    //challenge03::challenge();
+    ownership_scope::simulation();
 }

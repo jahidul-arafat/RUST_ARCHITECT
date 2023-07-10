@@ -1,6 +1,6 @@
 use std::any::type_name;
 
-pub(crate) fn challenge() {
+pub fn challenge() {
     // define an 1D array of 10 integers
     let numbers = [10, 20, 1, 2, 4, -30, 6, 7, 8, 9, 10];
     // determine max,min and average

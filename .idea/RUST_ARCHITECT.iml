@@ -3,10 +3,10 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/hello_world/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/hello_world/src/function_sim/src" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/hello_world/src/function_sim/target" />
-      <excludeFolder url="file://$MODULE_DIR$/hello_world/target" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_essentials/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_essentials/src/function_sim/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/rust_essentials/src/function_sim/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust_essentials/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

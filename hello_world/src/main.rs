@@ -9,6 +9,7 @@
 //mod challenge03;
 //mod ownership_scope;
 mod references;
+//mod challenge04;
 
 fn main() {
     println!("Rust Playbook and Simulations\n----------------------------");
@@ -20,4 +21,5 @@ fn main() {
     //challenge03::challenge();
     //ownership_scope::simulation();
     references::simulation();
+    //challenge04::challenge();
 }

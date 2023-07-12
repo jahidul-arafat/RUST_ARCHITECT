@@ -228,12 +228,17 @@ fn get_nth_word_sim() {
 fn user_input_usize() -> usize {
     println!("Please enter a number:");
 
-    let mut input = String::new();
+    let mut buffer = String::new(); // stores in the heap, so it dynamically resizes
+    /*
+    - io::stdin() ->  from io module we use stdin 'Standard in' function to create a new handle to access the standard input stream
+    - then use read_line() to read the input from the user
+    - then pass a mutable reference to our buffer as an input argument to the read_line() function
+     */
     io::stdin()
-        .read_line(&mut input)
+        .read_line(&mut buffer)
         .expect("Failed to read line");
 
-    let number: usize = input.trim().parse().expect("Invalid input");
+    let number: usize = buffer.trim().parse().expect("Invalid input");
     number
 }
 

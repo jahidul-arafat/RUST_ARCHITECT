@@ -8,8 +8,11 @@
 //mod basics;
 //mod challenge03;
 //mod ownership_scope;
-mod references;
+//mod references;
+//mod modules;
 //mod challenge04;
+
+mod challenge05;
 
 fn main() {
     println!("Rust Playbook and Simulations\n----------------------------");
@@ -20,6 +23,8 @@ fn main() {
     //program_flow_control::simulation();
     //challenge03::challenge();
     //ownership_scope::simulation();
-    references::simulation();
+    //references::simulation();
     //challenge04::challenge();
+    //modules::simulation();
+    challenge05::challenge();
 }

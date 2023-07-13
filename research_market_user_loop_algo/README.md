@@ -1,4 +1,4 @@
-# Title: Simulation and Analysis of User Behavior and Resource Management in Response to Power Oversubscription in Data Centers for HPC System
+# Title: Modeling, Simulation and Analysis of User Behavior and Resource Management in Response to Power Oversubscription in Data Centers for HPC System
 
 # 1. Introduction
 The research involves an algorithm that manages power oversubscription in a data center. The program simulates how users adjust their resource usage and bid amounts when system power consumption exceeds system demand.
@@ -14,13 +14,23 @@ The findings of this research have significant implications for data center mana
 In conclusion, this research represents a step forward in understanding the complex dynamics of power management in data centers. By leveraging a novel simulation approach, it provides valuable insights into user behavior in response to power oversubscription, paving the way for more efficient and sustainable data center management.
 
 ### 1.2 Research Objectives
+#### 1.2.1 Simulation and Modeling Objectives
+
+These objectives aim to derive optimal values for the coefficients that result in an efficient allocation of resources, minimal power change, and maximum bid amount in the system. The mathematical models and coefficients provide a systematic way to adjust the system's behavior and study its response under different scenarios.
+
 Here are three potential research objectives based on the program and the analysis we conducted:
-- [x] Objective 1: To simulate user behavior in a data center environment during power oversubscription scenarios. This includes modeling user attributes such as initial power consumption, resource reduction capabilities, and bidding behaviors.
-- [x] Objective 2: To analyze the relationship between initial power consumption, resource reduction, and bid amounts among users in the context of power oversubscription. This involves identifying correlations and patterns, and testing relevant hypotheses.
-- [x] Objective 3: To derive insights from the simulation and analysis that can inform the development of efficient strategies for managing power oversubscription in data centers. This includes understanding how users respond to power oversubscription and how power savings are related to resource reduction and bid amounts.
+- [x] Objective 1: To simulate user (aka datacenter components) behavior in a data center environment during power oversubscription scenarios. This includes modeling user attributes such as initial power consumption, resource reduction capabilities, and bidding behaviors.
+- [x] Objective 2: To derive the optimal values for model coefficients that result in an efficient allocation of resources, minimal power change, and maximum bid amount in the system along with developing mathematical models for those.
+- [x] Objective 3: To analyze the relationship between initial power consumption, resource reduction, and bid amounts among users in the context of power oversubscription. This involves identifying correlations and patterns, and testing relevant hypotheses.
+- [x] Objective 4: To derive insights from the simulation and analysis that can inform the development of efficient strategies for managing power oversubscription in data centers. This includes understanding how users respond to power oversubscription and how power savings are related to resource reduction and bid amounts.
 
 These objectives set a clear direction for the research and will guide the data analysis and interpretation of the results.
-
+```agsl
+Draft for model coefficients
+- [x] To develop a mathematical model for resource reduction using coefficients a, b, and c: This objective involves developing a linear combination of the user's original resource reduction and power consumption to calculate the updated resource reduction. The coefficients a, b, and c control the weights of the original resource reduction, the original power consumption, and a constant term in the calculation, respectively. The goal is to understand how varying these coefficients impacts the updated resource reduction and to find optimal values for these coefficients that minimize the total resource reduction across all users.
+- [x] To establish a mathematical model for power change using coefficients d, e, and f: This objective involves developing a linear combination of the user's original power consumption and resource reduction to calculate the power change factor. The coefficients d, e, and f control the weights of the original power consumption, the original resource reduction, and a constant term in the calculation, respectively. The goal is to understand how varying these coefficients impacts the power change factor and to find optimal values for these coefficients that minimize the total power change across all users. 
+- [x] To formulate a mathematical model for bid amount using coefficients g, h, and i: This objective involves developing a linear combination of the user's original power consumption and resource reduction to calculate the bid amount. The coefficients g, h, and i control the weights of the original power consumption, the original resource reduction, and a constant term in the calculation, respectively. The goal is to understand how varying these coefficients impacts the bid amount and to find optimal values for these coefficients that maximize the total bid amount across all users.
+```
 ## 1.3 Hypothesis
 - [x] Hypothesis 1 (H1): There is a positive relationship between initial power consumption and the bid amount. This hypothesis is based on the moderate positive correlation observed between these two variables. Users who consume more power initially may be more likely to bid higher amounts.
 - [x] Hypothesis 2 (H2): Resource reduction strategies are more effective for users with higher initial power consumption. This is based on the moderate positive correlation observed between initial power consumption and resource reduction.
@@ -111,57 +121,66 @@ Here are the mathematical models derived from the research, along with their rep
 | Bid Amount Model | Bid Amount = h*(Initial Power Consumption) + i*(Resource Reduction) + j |
 | Power Oversubscription Management Model | Minimize Power Oversubscription = k*(System Power Consumption - System Demand) |
 
-Sure, here's a step-by-step explanation of the calculations for each model:
+#### 1.4 Why these coefficients are used?
+Certainly, the coefficients that are used in the updated code serve as weights or multipliers that adjust the calculations for resource reduction, power consumption, and bid amount. They are derived from the mathematical models we established earlier.
+
+Here's a breakdown of what each coefficient does:
+
+1. `a`, `b`, and `c` are used in the calculation for `updated_resource_reduction`. These coefficients are obtained from the first mathematical model and they represent the weights of the user's original resource reduction (`a`), the user's original power consumption (`b`), and a constant term (`c`). The expression `a*self.resource_reduction + b*self.power_consumption + c` is a linear combination of the user's original resource reduction and power consumption, adjusted by the coefficients.
+
+2. `d`, `e`, and `f` are used in the calculation for `power_change_factor`. These coefficients are obtained from the second mathematical model and they represent the weights of the user's original power consumption (`d`), the user's original resource reduction (`e`), and a constant term (`f`). The expression `d*self.power_consumption + e*self.resource_reduction + f` is a linear combination of the user's original power consumption and resource reduction, adjusted by the coefficients.
+
+3. `g`, `h`, and `i` are used in the calculation for `bid_amount`. These coefficients are obtained from the third mathematical model and they represent the weights of the user's original power consumption (`g`), the user's original resource reduction (`h`), and a constant term (`i`). The expression `g*self.power_consumption + h*self.resource_reduction + i` is a linear combination of the user's original power consumption and resource reduction, adjusted by the coefficients.
+
+The purpose of these coefficients is to model the behavior of the system according to the research objectives. They allow you to adjust the influence of the different factors (resource reduction, power consumption) on the output variables (updated resource reduction, power change factor, and bid amount). By changing these coefficients, you can simulate different scenarios and study how changes in the input factors affect the system's behavior.
+# Simulation Results
+
+## Models and Computed Values
+
+| Model                                   | Computed Value |
+| --------------------------------------- | -------------- |
+| Power Consumption Model                 | 115.0          |
+| Resource Reduction Model                | 175.0          |
+| Bid Amount Model                        | 105.0          |
+| Power Oversubscription Management Model | 90.0           |
+
+## Step-by-step Calculation Explanation
 
 1. **Power Consumption Model**: This model estimates power consumption based on initial power consumption, resource reduction, and bid amount. The equation is:
 
-   \[
-   \text{{Power Consumption}} = a*(\text{{Initial Power Consumption}}) + b*(\text{{Resource Reduction}}) + c*(\text{{Bid Amount}}) + d
-   \]
+   `Power Consumption = a*(Initial Power Consumption) + b*(Resource Reduction) + c*(Bid Amount) + d`
 
-   In our simulation, we set \(a = 0.5\), \(b = 0.3\), \(c = 0.2\), \(d = 10\), \(\text{{Initial Power Consumption}} = 100\), \(\text{{Resource Reduction}} = 50\), and \(\text{{Bid Amount}} = 200\). Substituting these values in:
+   In our simulation, we set `a = 0.5`, `b = 0.3`, `c = 0.2`, `d = 10`, `Initial Power Consumption = 100`, `Resource Reduction = 50`, and `Bid Amount = 200`. Substituting these values in:
 
-   \[
-   \text{{Power Consumption}} = 0.5*100 + 0.3*50 + 0.2*200 + 10 = 115
-   \]
+   `Power Consumption = 0.5*100 + 0.3*50 + 0.2*200 + 10 = 115`
 
 2. **Resource Reduction Model**: This model estimates resource reduction based on initial power consumption and bid amount. The equation is:
 
-   \[
-   \text{{Resource Reduction}} = e*(\text{{Initial Power Consumption}}) + f*(\text{{Bid Amount}}) + g
-   \]
+   `Resource Reduction = e*(Initial Power Consumption) + f*(Bid Amount) + g`
 
-   We set \(e = 0.4\), \(f = 0.6\), \(g = 15\), \(\text{{Initial Power Consumption}} = 100\), and \(\text{{Bid Amount}} = 200\). Substituting these values in:
+   We set `e = 0.4`, `f = 0.6`, `g = 15`, `Initial Power Consumption = 100`, and `Bid Amount = 200`. Substituting these values in:
 
-   \[
-   \text{{Resource Reduction}} = 0.4*100 + 0.6*200 + 15 = 175
-   \]
+   `Resource Reduction = 0.4*100 + 0.6*200 + 15 = 175`
 
 3. **Bid Amount Model**: This model estimates bid amount based on initial power consumption and resource reduction. The equation is:
 
-   \[
-   \text{{Bid Amount}} = h*(\text{{Initial Power Consumption}}) + i*(\text{{Resource Reduction}}) + j
-   \]
+   `Bid Amount = h*(Initial Power Consumption) + i*(Resource Reduction) + j`
 
-   We set \(h = 0.7\), \(i = 0.3\), \(j = 20\), \(\text{{Initial Power Consumption}} = 100\), and \(\text{{Resource Reduction}} = 50\). Substituting these values in:
+   We set `h = 0.7`, `i = 0.3`, `j = 20`, `Initial Power Consumption = 100`, and `Resource Reduction = 50`. Substituting these values in:
 
-   \[
-   \text{{Bid Amount}} = 0.7*100 + 0.3*50 + 20 = 105
-   \]
+   `Bid Amount = 0.7*100 + 0.3*50 + 20 = 105`
 
 4. **Power Oversubscription Management Model**: This model aims to minimize power oversubscription, which is the difference between system power consumption and system demand. The equation is:
 
-   \[
-   \text{{Minimize Power Oversubscription}} = k*(\text{{System Power Consumption}} - \text{{System Demand}})
-   \]
+   `Minimize Power Oversubscription = k*(System Power Consumption - System Demand)`
 
-   We set \(k = 0.9\), \(\text{{System Power Consumption}} = 500\), and \(\text{{System Demand}} = 400\). Substituting these values in:
+   We set `k = 0.9`, `System Power Consumption = 500`, and `System Demand = 400`. Substituting these values in:
 
-   \[
-   \text{{Minimize Power Oversubscription}} = 0.9*(500 - 400) = 90
-   \]
+   `Minimize Power Oversubscription = 0.9*(500 - 400) = 90`
 
-Again, please note that the coefficients used in these models are arbitrary for the purpose of this simulation. In real-world applications, these coefficients would be determined through data analysis and model fitting.
+Please note that the coefficients used in these models are arbitrary for the purpose of this simulation. In real-world applications, these coefficients would be determined through data analysis and model fitting.
+
+
 #### 1.3.1 Resource Reduction Calculation
 ```agsl
 updated_resource_reduction = min(user.resource_reduction, (user.power_consumption * system_demand) / system_power_consumption)

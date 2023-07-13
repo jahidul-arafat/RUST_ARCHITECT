@@ -6,7 +6,6 @@ use std::sync::{Arc, Mutex};
 use std::thread;
 
 fn main() {
-    println!("Hello, world!");
     handle_power_oversubscription();
 }
 

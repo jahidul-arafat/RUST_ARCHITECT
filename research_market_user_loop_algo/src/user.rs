@@ -41,18 +41,33 @@ impl User {
     pub fn allocate_resource_reduction(&mut self, system_power_consumption: u32, system_demand: u32) -> (ResourceReduction, PowerConsumption, u32, u32) {
         // Perform resource allocation logic for the user
         // Return the updated resource reduction, power consumption, and bid amount
+        /*
+        The optimal set of coefficient values depends on the specific data, the cost function, and the constraints of your problem. Without this information, it's not possible to suggest the best values.
+
+        However, I can provide some general guidance. Typically, coefficient values are chosen to minimize some cost function or error measure. For example, if you're trying to minimize power consumption, you might choose coefficients that reduce the power consumption in the model equations.
+
+        To give you an idea, here are three sets of coefficients that could be used as starting points for further optimization:
+
+        1. Set 1: \(a = 0.1, b = 0.2, c = 0.3, d = 0.4, e = 0.5, f = 0.6, g = 0.7, h = 0.8, i = 0.9, j = 1.0\)
+        2. Set 2: \(a = 0.5, b = 0.4, c = 0.3, d = 0.2, e = 0.1, f = 0.2, g = 0.3, h = 0.4, i = 0.5, j = 0.6\)
+        3. Set 3: \(a = 0.9, b = 0.8, c = 0.7, d = 0.6, e = 0.5, f = 0.4, g = 0.3, h = 0.2, i = 0.1, j = 0.05\)
+
+        These sets are randomly chosen and may not be optimal for your specific problem. They are intended to be used as starting points for further optimization, such as the gradient descent method I described earlier.
+
+        Keep in mind that optimization is a complex process that often requires trial and error and the use of sophisticated algorithms. You might need to adjust these values, choose a different starting point, or use different optimization methods depending on your specific problem and data.
+        */
 
         // coefficients for the models
         let a = 0.5;
-        let b = 0.3;
-        let c = 0.2;
-        let d = 10.0;
-        let e = 0.4;
-        let f = 0.6;
-        let g = 15.0;
-        let h = 0.7;
-        let i = 0.3;
-        let j = 20.0;
+        let b = 0.4;
+        let c = 0.3;
+        let d = 0.2;
+        let e = 0.1;
+        let f = 0.1;
+        let g = 0.2;
+        let h = 0.3;
+        let i = 0.5;
+        let j = 0.52;
 
         let resource_reduction_limit = (self.power_consumption * system_demand) / system_power_consumption;
 

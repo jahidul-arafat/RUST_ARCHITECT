@@ -1,6 +1,26 @@
-# Title: Market Mechanism-Based User-in-the-Loop Scalable Power Oversubscription for HPC Systems
+# Title: Simulation and Analysis of User Behavior and Resource Management in Response to Power Oversubscription in Data Centers for HPC System
 
 # 1. Introduction
+The research involves an algorithm that manages power oversubscription in a data center. The program simulates how users adjust their resource usage and bid amounts when system power consumption exceeds system demand.
+
+The increasing demand for computational power and data storage has led to a surge in the number and size of data centers worldwide. These facilities consume significant amounts of energy, leading to high operating costs and substantial environmental impact. One of the critical challenges in data center management is power oversubscription, a scenario where the total power consumption of the data center's components exceeds the power supply. Efficient management of power oversubscription can lead to cost savings and reduce environmental impact, making it a key area of research.
+
+The present study, titled "Simulation and Analysis of User Behavior and Resource Management in Response to Power Oversubscription in Data Centers," aims to shed light on this complex issue. The research is based on a simulation program that emulates the behavior of users in a data center environment. In this simulated environment, each user's power consumption, resource reduction capabilities, and bidding behaviors are modeled. The program then reacts to a scenario where the system's power consumption exceeds the system demand, requiring power oversubscription management.
+
+The focus of this research is to analyze the relationship between power consumption, resource reduction, and bid amounts by users when power oversubscription occurs. Initial analysis reveals interesting patterns in user behavior, such as a positive correlation between initial power consumption and bid amount, and the effectiveness of resource reduction strategies for users with higher initial power consumption. The research also tests the hypothesis that saving more power does not significantly influence the bid amount.
+
+The findings of this research have significant implications for data center management, particularly in developing strategies for handling power oversubscription. Understanding how users respond to power oversubscription and how resource reduction and bid amounts are related to power savings can inform the design of more efficient and sustainable power management strategies in data centers.
+
+In conclusion, this research represents a step forward in understanding the complex dynamics of power management in data centers. By leveraging a novel simulation approach, it provides valuable insights into user behavior in response to power oversubscription, paving the way for more efficient and sustainable data center management.
+
+### 1.2 Research Objectives
+Here are three potential research objectives based on the program and the analysis we conducted:
+- [x] Objective 1: To simulate user behavior in a data center environment during power oversubscription scenarios. This includes modeling user attributes such as initial power consumption, resource reduction capabilities, and bidding behaviors.
+- [x] Objective 2: To analyze the relationship between initial power consumption, resource reduction, and bid amounts among users in the context of power oversubscription. This involves identifying correlations and patterns, and testing relevant hypotheses.
+- [x] Objective 3: To derive insights from the simulation and analysis that can inform the development of efficient strategies for managing power oversubscription in data centers. This includes understanding how users respond to power oversubscription and how power savings are related to resource reduction and bid amounts.
+
+These objectives set a clear direction for the research and will guide the data analysis and interpretation of the results.
+
 ## 1.3 Hypothesis
 - [x] Hypothesis 1 (H1): There is a positive relationship between initial power consumption and the bid amount. This hypothesis is based on the moderate positive correlation observed between these two variables. Users who consume more power initially may be more likely to bid higher amounts.
 - [x] Hypothesis 2 (H2): Resource reduction strategies are more effective for users with higher initial power consumption. This is based on the moderate positive correlation observed between initial power consumption and resource reduction.
@@ -74,7 +94,74 @@ Certainly! Here are the steps explained in bullet points for the example scenari
 These steps outline the process of power oversubscription for the example scenario with user 100 and user 200. The code implementation handles these steps for a larger number of users, performing the bidding process, resource reallocation, and updating the user's resource reduction accordingly.
 
 
-### 1.3 Formulas 
+### 1.3 Mathematical Models could be derived
+Based on the provided program and the nature of the research, several mathematical models can be derived. Here are some examples:
+- [x] Power Consumption Model: This model can be used to predict the power consumption of a user given their attributes. This could be a regression model with the user's initial power consumption, resource reduction capabilities, and bid amount as input variables.
+- [x] Resource Reduction Model: This model could predict the amount of resource reduction a user could achieve based on their initial power consumption and bid amount. This could also be a regression model.
+- [x] Bid Amount Model: This model can predict the bid amount a user is likely to place based on their initial power consumption and resource reduction. Again, this could be represented as a regression model.
+- [x] Power Oversubscription Management Model: This model could be more complex, potentially using optimization techniques to minimize power oversubscription (the difference between system power consumption and system demand) by managing resource allocation among users.
+
+
+Here are the mathematical models derived from the research, along with their representative equations:
+
+| Model | Equation |
+| --- | --- |
+| Power Consumption Model | Power Consumption = a*(Initial Power Consumption) + b*(Resource Reduction) + c*(Bid Amount) + d |
+| Resource Reduction Model | Resource Reduction = e*(Initial Power Consumption) + f*(Bid Amount) + g |
+| Bid Amount Model | Bid Amount = h*(Initial Power Consumption) + i*(Resource Reduction) + j |
+| Power Oversubscription Management Model | Minimize Power Oversubscription = k*(System Power Consumption - System Demand) |
+
+Sure, here's a step-by-step explanation of the calculations for each model:
+
+1. **Power Consumption Model**: This model estimates power consumption based on initial power consumption, resource reduction, and bid amount. The equation is:
+
+   \[
+   \text{{Power Consumption}} = a*(\text{{Initial Power Consumption}}) + b*(\text{{Resource Reduction}}) + c*(\text{{Bid Amount}}) + d
+   \]
+
+   In our simulation, we set \(a = 0.5\), \(b = 0.3\), \(c = 0.2\), \(d = 10\), \(\text{{Initial Power Consumption}} = 100\), \(\text{{Resource Reduction}} = 50\), and \(\text{{Bid Amount}} = 200\). Substituting these values in:
+
+   \[
+   \text{{Power Consumption}} = 0.5*100 + 0.3*50 + 0.2*200 + 10 = 115
+   \]
+
+2. **Resource Reduction Model**: This model estimates resource reduction based on initial power consumption and bid amount. The equation is:
+
+   \[
+   \text{{Resource Reduction}} = e*(\text{{Initial Power Consumption}}) + f*(\text{{Bid Amount}}) + g
+   \]
+
+   We set \(e = 0.4\), \(f = 0.6\), \(g = 15\), \(\text{{Initial Power Consumption}} = 100\), and \(\text{{Bid Amount}} = 200\). Substituting these values in:
+
+   \[
+   \text{{Resource Reduction}} = 0.4*100 + 0.6*200 + 15 = 175
+   \]
+
+3. **Bid Amount Model**: This model estimates bid amount based on initial power consumption and resource reduction. The equation is:
+
+   \[
+   \text{{Bid Amount}} = h*(\text{{Initial Power Consumption}}) + i*(\text{{Resource Reduction}}) + j
+   \]
+
+   We set \(h = 0.7\), \(i = 0.3\), \(j = 20\), \(\text{{Initial Power Consumption}} = 100\), and \(\text{{Resource Reduction}} = 50\). Substituting these values in:
+
+   \[
+   \text{{Bid Amount}} = 0.7*100 + 0.3*50 + 20 = 105
+   \]
+
+4. **Power Oversubscription Management Model**: This model aims to minimize power oversubscription, which is the difference between system power consumption and system demand. The equation is:
+
+   \[
+   \text{{Minimize Power Oversubscription}} = k*(\text{{System Power Consumption}} - \text{{System Demand}})
+   \]
+
+   We set \(k = 0.9\), \(\text{{System Power Consumption}} = 500\), and \(\text{{System Demand}} = 400\). Substituting these values in:
+
+   \[
+   \text{{Minimize Power Oversubscription}} = 0.9*(500 - 400) = 90
+   \]
+
+Again, please note that the coefficients used in these models are arbitrary for the purpose of this simulation. In real-world applications, these coefficients would be determined through data analysis and model fitting.
 #### 1.3.1 Resource Reduction Calculation
 ```agsl
 updated_resource_reduction = min(user.resource_reduction, (user.power_consumption * system_demand) / system_power_consumption)

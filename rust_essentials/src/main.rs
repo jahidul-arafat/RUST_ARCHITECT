@@ -12,7 +12,11 @@
 //mod modules;
 //mod challenge04;
 
-mod challenge05;
+//mod challenge05;
+//mod cli_io;
+//mod file_ops;
+//mod challenge06_cli_version;
+mod challenge06;
 
 fn main() {
     println!("Rust Playbook and Simulations\n----------------------------");
@@ -26,5 +30,9 @@ fn main() {
     //references::simulation();
     //challenge04::challenge();
     //modules::simulation();
-    challenge05::challenge();
+    //challenge05::challenge();
+    //cli_io::simulation();
+    //file_ops::simulation();
+    challenge06::challenge();
+    //challenge06_cli_version::challenge();
 }

@@ -19,7 +19,9 @@
 //mod challenge06;
 //mod struct_sim;
 //mod challenge07;
-mod challenge07_circle;
+//mod challenge07_circle;
+//mod generic_type;
+mod challenge08;
 
 fn main() {
     println!("Rust Playbook and Simulations\n----------------------------");
@@ -40,5 +42,7 @@ fn main() {
     //challenge06_cli_version::challenge();
     //struct_sim::simulation();
     //challenge07::challenge();
-    challenge07_circle::challenge();
+    //challenge07_circle::challenge();
+    //generic_type::simulation();
+    challenge08::challenge();
 }

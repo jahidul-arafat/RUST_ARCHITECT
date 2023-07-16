@@ -1,1 +1,1 @@
-/Users/jarotball/study/RUST_ARCHITECT/rust_essentials/target/debug/rust_essentials: /Users/jarotball/study/RUST_ARCHITECT/rust_essentials/src/challenge07_circle.rs /Users/jarotball/study/RUST_ARCHITECT/rust_essentials/src/main.rs
+/Users/jarotball/study/RUST_ARCHITECT/rust_essentials/target/debug/rust_essentials: /Users/jarotball/study/RUST_ARCHITECT/rust_essentials/src/challenge08.rs /Users/jarotball/study/RUST_ARCHITECT/rust_essentials/src/main.rs

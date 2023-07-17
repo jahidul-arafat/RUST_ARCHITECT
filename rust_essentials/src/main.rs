@@ -21,7 +21,10 @@
 //mod challenge07;
 //mod challenge07_circle;
 //mod generic_type;
-mod challenge08;
+//mod challenge08;
+//mod traits_sim;
+//mod trait_bound_sim;
+mod challenge09;
 
 fn main() {
     println!("Rust Playbook and Simulations\n----------------------------");
@@ -44,5 +47,8 @@ fn main() {
     //challenge07::challenge();
     //challenge07_circle::challenge();
     //generic_type::simulation();
-    challenge08::challenge();
+    //challenge08::challenge();
+    //traits_sim::simulation();
+    //trait_bound_sim::simulation();
+    challenge09::challenge();
 }

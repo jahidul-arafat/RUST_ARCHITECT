@@ -26,7 +26,9 @@
 //mod trait_bound_sim;
 //mod challenge09;
 //mod lifetimes_sim;
-mod lifetimes_struct_sim;
+//mod lifetimes_struct_sim;
+//mod enum_sim;
+mod challenge10;
 
 fn main() {
     println!("Rust Playbook and Simulations\n----------------------------");
@@ -54,5 +56,7 @@ fn main() {
     //trait_bound_sim::simulation();
     //challenge09::challenge();
     //lifetimes_sim::simulation();
-    lifetimes_struct_sim::simulation();
+    //lifetimes_struct_sim::simulation();
+    //enum_sim::simulation();
+    challenge10::challenge();
 }

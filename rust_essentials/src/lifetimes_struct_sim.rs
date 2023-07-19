@@ -46,4 +46,4 @@ pub fn simulation(){
     println!("Shuttle: {:?}", shuttle);
     println!("Sender is: {}", sender);
 
-    let s = "Welcome to JA RUST Sim Labs";
+    //let s = "Welcome to JA RUST Sim Labs";

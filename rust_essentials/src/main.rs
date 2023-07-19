@@ -28,7 +28,9 @@
 //mod lifetimes_sim;
 //mod lifetimes_struct_sim;
 //mod enum_sim;
-mod challenge10;
+//mod challenge10;
+//mod error_handling_sim;
+mod challenge11;
 
 fn main() {
     println!("Rust Playbook and Simulations\n----------------------------");
@@ -58,5 +60,7 @@ fn main() {
     //lifetimes_sim::simulation();
     //lifetimes_struct_sim::simulation();
     //enum_sim::simulation();
-    challenge10::challenge();
+    //challenge10::challenge();
+    //error_handling_sim::simulation();
+    challenge11::challenge();
 }

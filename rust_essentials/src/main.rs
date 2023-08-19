@@ -30,7 +30,8 @@
 //mod enum_sim;
 //mod challenge10;
 //mod error_handling_sim;
-mod challenge11;
+//mod challenge11;
+mod basics;
 
 fn main() {
     println!("Rust Playbook and Simulations\n----------------------------");
@@ -62,5 +63,6 @@ fn main() {
     //enum_sim::simulation();
     //challenge10::challenge();
     //error_handling_sim::simulation();
-    challenge11::challenge();
+    //challenge11::challenge();
+    basics::simulation();
 }

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef2c0ebc-30b5-4853-96fe-7fbd505a2370" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../hello_world/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/.rustc_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/CACHEDIR.TAG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/.cargo-lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/.fingerprint/hello_world-66db0fcba9fbd194/bin-hello_world" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/.fingerprint/hello_world-66db0fcba9fbd194/bin-hello_world.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/.fingerprint/hello_world-66db0fcba9fbd194/dep-bin-hello_world" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/.fingerprint/hello_world-66db0fcba9fbd194/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/deps/hello_world-66db0fcba9fbd194" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/deps/hello_world-66db0fcba9fbd194.16tkrpw9h8kjl3l6.rcgu.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/deps/hello_world-66db0fcba9fbd194.1qehvexafzkux4z2.rcgu.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/deps/hello_world-66db0fcba9fbd194.2aym8hmp50s5lo3a.rcgu.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/deps/hello_world-66db0fcba9fbd194.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/deps/hello_world-66db0fcba9fbd194.gz8iqliatck7n8t.rcgu.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/deps/hello_world-66db0fcba9fbd194.v8s7w0altnjsoi4.rcgu.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/deps/hello_world-66db0fcba9fbd194.v9earwszj8zg3zz.rcgu.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/hello_world" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/hello_world.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77-3q8btvhfz3qoo/16tkrpw9h8kjl3l6.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77-3q8btvhfz3qoo/1qehvexafzkux4z2.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77-3q8btvhfz3qoo/2aym8hmp50s5lo3a.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77-3q8btvhfz3qoo/dep-graph.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77-3q8btvhfz3qoo/gz8iqliatck7n8t.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77-3q8btvhfz3qoo/query-cache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77-3q8btvhfz3qoo/v8s7w0altnjsoi4.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77-3q8btvhfz3qoo/v9earwszj8zg3zz.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77-3q8btvhfz3qoo/work-products.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hello_world/target/debug/incremental/hello_world-wh6057tf1u9e/s-gnwv318x85-bo7v77.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rust_essentials.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../research_dc_power_oversubscription_modelling_simulation/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../research_dc_power_oversubscription_modelling_simulation/target/.rustc_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basics.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/basics.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/.fingerprint/rust_essentials-6d136d72c698720c/dep-bin-rust_essentials" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/.fingerprint/rust_essentials-6d136d72c698720c/dep-bin-rust_essentials" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/.fingerprint/rust_essentials-6d136d72c698720c/output-bin-rust_essentials" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.193gab3sxooxozv9.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.193gab3sxooxozv9.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.290l2o57i4pyvi9o.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.290l2o57i4pyvi9o.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.5dv9b8smanwiy0sv.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.5dv9b8smanwiy0sv.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.azmpfxsxhq2tgam.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.azmpfxsxhq2tgam.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/rust_essentials-6d136d72c698720c.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/11vm002gonyu8hn8.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/193gab3sxooxozv9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/1j17rh1v0vgnmjv1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/25rn9apbo5fmn64n.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/26o8vabh9t5bbsmf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/27ubjj51f4bpvnru.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/290l2o57i4pyvi9o.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/2bevaxwnynzqq0rc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/2g0bc3cpyn0k68q.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/2l27ya9a31bxffoz.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/2won7w12hwk0hga1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/39cpawssf0h6xbwr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/3h1wffgw7e3ley4m.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/3qzijgrxh7g1mocs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/3t631yf0pw9ffu6z.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/3wu08v9bo200d85l.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/44cgejdv6498su1n.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/45j982n7ib5ey83a.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/4eqzhfxof8qjam74.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/4gq1z02hwm7xcya1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/4lpxsezvtzmsjgv.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/4x91tto8vqszt063.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/4xz0s4oewuuzz7cv.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/5aowrcf9fcfs9m29.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/5dv9b8smanwiy0sv.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/5ele5abo7k0kgoiz.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/5epj86a0bk6c767p.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/azmpfxsxhq2tgam.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/gin7u24ukiuf2ye.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/ibzjo5tlc2w5zd6.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/il2s58kqoiqs2qq.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/laonnccz7we5br9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/mhwbu9xw63a1qfm.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632-1fglp152ci4q/xvap7p7fdlxq8m1.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/rust_essentials-54kau950kgam/s-gmyz00wkbo-ukb632.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/rust_essentials" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/rust_essentials" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/rust_essentials.d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/rust_essentials.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_res/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test_res/target/.rustc_info.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="i1134qvz" />
+  </component>
+  <component name="ProjectId" id="2UBhvWsq6a5FxszaTHOr74qwCQt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jarotball/study/RUST_ARCHITECT/rust_essentials&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef2c0ebc-30b5-4853-96fe-7fbd505a2370" name="Changes" comment="" />
+      <created>1692419111423</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692419111423</updated>
+    </task>
+    <servers />
+  </component>
+</project>

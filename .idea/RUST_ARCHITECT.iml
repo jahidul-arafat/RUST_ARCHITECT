@@ -7,10 +7,12 @@
       <sourceFolder url="file://$MODULE_DIR$/rust_essentials/src/function_sim/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test_res/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/research_dc_power_oversubscription_modelling_simulation/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_revision/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/rust_essentials/src/function_sim/target" />
       <excludeFolder url="file://$MODULE_DIR$/rust_essentials/target" />
       <excludeFolder url="file://$MODULE_DIR$/test_res/target" />
       <excludeFolder url="file://$MODULE_DIR$/research_dc_power_oversubscription_modelling_simulation/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust_revision/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,4 +1,4 @@
-fn simulation() {
+pub(crate) fn simulation() {
     // define a new variable 'x'
     let mut x = 5;
     println!("The value of x is {}", x);

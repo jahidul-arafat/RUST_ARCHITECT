@@ -13,7 +13,11 @@ const MAX_THREADS: usize = 100; // Maximum number of concurrent threads to use
 
 pub fn handle_power_oversubscription() {
     /**
-    In summary, system power consumption reflects the actual power usage of the system, while system demand represents the required power level to support the system's operations and workload. The system demand is typically determined based on factors such as performance requirements, resource utilization, and operational considerations, while the system power consumption is measured based on the actual power consumed by the system's components.
+    In summary, system power consumption reflects the actual power usage of the system,
+    while system demand represents the required power level to support the system's operations and workload.
+    The system demand is typically determined based on factors such as performance requirements, resource utilization,
+    and operational considerations, while the system power consumption is measured based on the actual power
+    consumed by the system's components.
      */
     let system_power_consumption = system_power_consumption::calculate_system_power_consumption(rand::thread_rng().gen_range(300000..=500000),
                                                                                                 50000,

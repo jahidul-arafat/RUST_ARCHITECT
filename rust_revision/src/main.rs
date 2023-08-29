@@ -14,12 +14,15 @@
 // mod challenge05;
 // mod cli_io_sim;
 // mod file_io_sim;
-mod challenge06;
-mod challenge06_cli;
+// mod challenge06;
+// mod challenge06_cli;
+//mod struct_sim;
+//mod tuple_struct_sim;
+mod challenge07;
 //mod suppliment_user_input;
 
 fn main() {
-    println!("Hello, world!");
+    println!("RUST MAIN");
     //basics::simulation();
     //challenge01::challenge();
     //compound_datatypes::simulation();
@@ -38,5 +41,8 @@ fn main() {
     //cli_io_sim::simulation();
     //file_io_sim::simulation();
     //challenge06::challenge();
-    challenge06_cli::challenge();
+    //challenge06_cli::challenge();
+    //struct_sim::simulation();
+    //tuple_struct_sim::simulation();
+    challenge07::challenge();
 }

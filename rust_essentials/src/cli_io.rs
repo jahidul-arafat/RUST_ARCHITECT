@@ -1,4 +1,4 @@
-use std::env;
+use std::env; // env module is not included in prelude
 
 pub fn simulation(){
     println!("CLI IO Operations");

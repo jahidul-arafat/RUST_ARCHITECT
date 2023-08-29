@@ -1,15 +1,22 @@
-mod basics;
-mod challenge01;
-mod compound_datatypes;
-mod function_sim;
-mod challenge02;
-mod program_flow_control;
-mod challenge03;
-mod ownership_sim;
-mod references_sim;
-mod data_race_sim;
-mod str_slice;
-mod challenge04;
+// mod basics;
+// mod challenge01;
+// mod compound_datatypes;
+// mod function_sim;
+// mod challenge02;
+// mod program_flow_control;
+// mod challenge03;
+// mod ownership_sim;
+// mod references_sim;
+// mod data_race_sim;
+// mod str_slice;
+// mod challenge04;
+// mod module_sim;
+// mod challenge05;
+// mod cli_io_sim;
+// mod file_io_sim;
+mod challenge06;
+mod challenge06_cli;
+//mod suppliment_user_input;
 
 fn main() {
     println!("Hello, world!");
@@ -24,6 +31,12 @@ fn main() {
     //references_sim::simulation();
     //data_race_sim::simulation();
     //str_slice::simulation();
-    challenge04::challenge();
-
+    //challenge04::challenge();
+    //module_sim::simulation();
+    //challenge05::challenge();
+    //suppliment_user_input::supplementary();
+    //cli_io_sim::simulation();
+    //file_io_sim::simulation();
+    //challenge06::challenge();
+    challenge06_cli::challenge();
 }

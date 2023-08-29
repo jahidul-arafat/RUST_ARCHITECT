@@ -54,9 +54,9 @@ fn get_first_word_by_bytes(msg: &str) -> &str {
     &msg
 }
 
-fn get_first_word(msg: &String) -> &str {
+fn get_first_word(msg: &str) -> &str {
     println!("String Length: {}", msg.len());
-    println!("String Capacity: {}", msg.capacity());
+    //println!("String Capacity: {}", msg.capacity());
     for (index, item) in msg.chars().enumerate() {
         if item == ' ' {
             return &msg[0..index];

@@ -42,6 +42,7 @@ fn read_from_file() {
     println!("Contents of the file:\n{:?}", contents)
 }
 
+// overwrite the existing contents of a file
 fn write_to_file() {
     let mut speech = String::new();
     speech.push_str("Hello, ");

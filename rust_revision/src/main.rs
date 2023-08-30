@@ -22,8 +22,11 @@
 //mod generic_type_sim;
 //mod generic_type_method_sim;
 //mod generic_box_datatype_sim;
-mod challenge08;
-mod playground;
+// mod challenge08;
+// mod playground;
+// mod traits_sim;
+// mod traits_bound_sim;
+mod challenge09;
 //mod suppliment_user_input;
 
 fn main() {
@@ -53,6 +56,9 @@ fn main() {
     //generic_type_sim::simulation();
     //generic_type_method_sim::simulation();
     //generic_box_datatype_sim::simulation();
-    challenge08::challenge();
+    //challenge08::challenge();
     //playground::playground();
+    //traits_sim::simulation();
+    //traits_bound_sim::simulation();
+    challenge09::challenge();
 }

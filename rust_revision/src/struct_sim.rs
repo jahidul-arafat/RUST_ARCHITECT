@@ -23,7 +23,7 @@ pub(crate) fn simulation(){
 
 // create a new struct named Shuttle
 // Struct is like a class in Java
-#[derive(Debug)] // debug trait is used// this is a custom datatype, so default formatter will not word. We need debug formatting -> but debug formatter itself cant resolve the problem
+#[derive(Debug)] // debug trait is used// this is a custom datatype, so default formatter will not work. We need debug formatting -> but debug formatter itself cant resolve the problem
 #[derive(Clone)] // clone trait for Shuttle
 struct Shuttle { // Struct is Stack-only datatype
     name: String, // ptr in Stack, but Data is in Heap // is &str--> string slice, then we need a lifetime annotation

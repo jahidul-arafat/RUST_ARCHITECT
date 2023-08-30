@@ -18,7 +18,12 @@
 // mod challenge06_cli;
 //mod struct_sim;
 //mod tuple_struct_sim;
-mod challenge07;
+//mod challenge07;
+//mod generic_type_sim;
+//mod generic_type_method_sim;
+//mod generic_box_datatype_sim;
+mod challenge08;
+mod playground;
 //mod suppliment_user_input;
 
 fn main() {
@@ -44,5 +49,10 @@ fn main() {
     //challenge06_cli::challenge();
     //struct_sim::simulation();
     //tuple_struct_sim::simulation();
-    challenge07::challenge();
+    //challenge07::challenge();
+    //generic_type_sim::simulation();
+    //generic_type_method_sim::simulation();
+    //generic_box_datatype_sim::simulation();
+    challenge08::challenge();
+    //playground::playground();
 }

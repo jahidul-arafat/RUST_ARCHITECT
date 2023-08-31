@@ -27,6 +27,9 @@
 // mod traits_sim;
 // mod traits_bound_sim;
 mod challenge09;
+mod lifetime_sim;
+mod lifetime_elision_rules;
+mod lifetime_handling_vulnerabilities;
 //mod suppliment_user_input;
 
 fn main() {
@@ -60,5 +63,8 @@ fn main() {
     //playground::playground();
     //traits_sim::simulation();
     //traits_bound_sim::simulation();
-    challenge09::challenge();
+    //challenge09::challenge();
+    //lifetime_sim::simulation();
+    //lifetime_elision_rules::simulation();
+    lifetime_handling_vulnerabilities::simulation();
 }

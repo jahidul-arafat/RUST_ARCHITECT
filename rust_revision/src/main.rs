@@ -7,7 +7,7 @@
 // mod challenge03;
 // mod ownership_sim;
 // mod references_sim;
-// mod data_race_sim;
+mod data_race_sim;
 // mod str_slice;
 // mod challenge04;
 // mod module_sim;
@@ -30,6 +30,8 @@ mod challenge09;
 mod lifetime_sim;
 mod lifetime_elision_rules;
 mod lifetime_handling_vulnerabilities;
+mod lifetime_struct;
+mod data_race_simplified;
 //mod suppliment_user_input;
 
 fn main() {
@@ -44,6 +46,7 @@ fn main() {
     //ownership_sim::simulation();
     //references_sim::simulation();
     //data_race_sim::simulation();
+    data_race_simplified::simulation();
     //str_slice::simulation();
     //challenge04::challenge();
     //module_sim::simulation();
@@ -66,5 +69,6 @@ fn main() {
     //challenge09::challenge();
     //lifetime_sim::simulation();
     //lifetime_elision_rules::simulation();
-    lifetime_handling_vulnerabilities::simulation();
+    //lifetime_handling_vulnerabilities::simulation();
+    //lifetime_struct::simulation();
 }

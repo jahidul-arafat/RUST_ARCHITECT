@@ -32,6 +32,7 @@ mod lifetime_elision_rules;
 mod lifetime_handling_vulnerabilities;
 mod lifetime_struct;
 mod data_race_simplified;
+mod lifetime_static;
 //mod suppliment_user_input;
 
 fn main() {
@@ -46,7 +47,7 @@ fn main() {
     //ownership_sim::simulation();
     //references_sim::simulation();
     //data_race_sim::simulation();
-    data_race_simplified::simulation();
+    //data_race_simplified::simulation();
     //str_slice::simulation();
     //challenge04::challenge();
     //module_sim::simulation();
@@ -71,4 +72,5 @@ fn main() {
     //lifetime_elision_rules::simulation();
     //lifetime_handling_vulnerabilities::simulation();
     //lifetime_struct::simulation();
+    lifetime_static::simulation();
 }

@@ -9,8 +9,12 @@ pub fn simulation(){
     let convergent = String::from("c");
     println!("Lifetime Elision Rule Testing :{}", shuttle1.lifetime_test_method(&convergent));
 
-    println!("Lifetime of Struct/Send Transmission: {}",shuttle1.send_transmission_with_lf_annotation("MSG RETURN"));
-    println!("Lifetime of Struct/Send Transmission: {}",shuttle1.send_transmission_without_lf_annotation("NAME RETURN"));
+    println!("Lifetime of Struct/Send Transmission: {}",shuttle1
+        .send_transmission_with_lf_annotation("WITH SAME LF Annotation"));
+    println!("Lifetime of Struct/Send Transmission: {}",shuttle1
+        .send_transmission_without_lf_annotation("Without explicit LF Annotation"));
+    println!("Lifetime of Struct/Send Transmission: {}",shuttle1
+        .send_transmission_with_different_lf_annotation("With Different LF Annotation"));
 }
 
 // create a new struct named "Shuttle"
@@ -26,13 +30,13 @@ struct Shuttle<'a> {
     //                 // so, its not clear how the lifetime of the borrowed str related to the lifetime of the Shuttle struct
     //                 // if the str 'name' is dropped or disappeared, struct is still onscope and still referencing a no-longer existing string, then that will be a problem
     //                 // Solution: Explicitly specify the lifetime annotation of the variable 'name' for the struct related to the str-slice its storing
-    name: &'a str,
+    name: &'a str, // a borrow, Struct doesnt own it, thats why lifetime annotation required
     crew_size: usize,
     propellant: f64
 }
 
 // implement the struct
-impl<'a> Shuttle<'a> {
+impl<'a,'b> Shuttle<'a> {
     // Constructor //Associated function
     fn new(name: &str, crew_size: usize, propellant: f64) -> Shuttle {
         Shuttle {
@@ -79,7 +83,17 @@ impl<'a> Shuttle<'a> {
     // msg is borrowed, Struct doesnt own it; so we have to specify lifetime specifier for msg (because it is returned),
     // that its in the same lifetime of the Struct to avoid dangling references
     // if msg was not returned, then no lifetime annotation would be needed
-    fn send_transmission_with_lf_annotation(&'a self, msg: &'a str) -> &str {
+    fn send_transmission_with_lf_annotation(&'a self, msg: &'a str) -> &str // 'a str (implicitly)
+    {
+        println!("Sending message: {}", msg);
+        let mut new_msg:String =String::from("New Name");
+        new_msg.push_str(&msg);
+        msg
+    }
+
+    // lifetime annotation <'b> is implemented for entire implementation block at the top
+    fn send_transmission_with_different_lf_annotation(&'a self, msg: &'b str) -> &'b str // 'a str (implicitly)
+    {
         println!("Sending message: {}", msg);
         let mut new_msg:String =String::from("New Name");
         new_msg.push_str(&msg);
@@ -88,6 +102,8 @@ impl<'a> Shuttle<'a> {
 
     // lifetime elision rule applied
     // no explicit lifetime annotation needed
+    // lifetime of &self will be applied to returned value self.name
+    // returned value 'self.name' is already in the same lifetime scope <'a> of &self
     fn send_transmission_without_lf_annotation(&self, msg: &str) -> &str {
         println!("Sending message: {}", msg);
         self.name
